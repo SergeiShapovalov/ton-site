@@ -9,6 +9,7 @@ apt-get install -y systemd
 # echo "daemon off;" >> /etc/nginx/nginx.conf
 rm /var/www/html/index.nginx-debian.html
 cp html_ton/index.html /var/www/html/index.nginx-debian.html
+cp html_ton/qr_ton.jpg /var/www/html/
 
 # Создаём раздел подкачки (иначе не на всех серверах запустится tonlib-cli)
 mkdir -p /var/cache/swap/
