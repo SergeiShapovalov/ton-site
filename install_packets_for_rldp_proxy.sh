@@ -7,7 +7,8 @@ apt-get clean all
 apt-get install -y systemd
 
 # echo "daemon off;" >> /etc/nginx/nginx.conf
-
+rm /var/www/html/index.nginx-debian.html
+cp html_ton/index.html /var/www/html/index.nginx-debian.html
 
 # Создаём раздел подкачки (иначе не на всех серверах запустится tonlib-cli)
 mkdir -p /var/cache/swap/
@@ -33,3 +34,5 @@ cmake --build . --target fift
 cmake --build . --target tonlib-cli
 cmake --build . --target rldp-http-proxy
 cmake --build . --target generate-random-id
+
+
