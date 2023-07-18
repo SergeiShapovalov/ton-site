@@ -24,7 +24,7 @@ mkdir TON
 cd TON
 apt-get update
 apt install -y build-essential cmake clang openssl libssl-dev zlib1g-dev gperf wget git curl libreadline-dev ccache libmicrohttpd-dev
-git clone --recurse-submodules https://github.com/SpyCheese/ton.git
+git clone --recurse-submodules https://github.com/ton-blockchain/ton.git
 mkdir build
 cd build
 cmake ../ton
