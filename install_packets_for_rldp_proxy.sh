@@ -3,7 +3,7 @@
 apt-get update && apt-get upgrade -y
 apt-get install -y nginx
 apt-get clean all
-
+apt-get install pkg-config
 apt-get install -y systemd
 
 # echo "daemon off;" >> /etc/nginx/nginx.conf
